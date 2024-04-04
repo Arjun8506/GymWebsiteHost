@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const plm = require("passport-local-mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/GymDatabase");
+mongoose.connect("mongodb+srv://arjunnagar801098:gymsite@gymwebsite.jxgdqmy.mongodb.net/GymDataBase");
+console.log("connected to db");
 
 const userSchema = new mongoose.Schema({
   name: {
